@@ -26,7 +26,7 @@ class ProductDataCenter
 		$return=[];
 		
 		foreach(self::$objectList as $obj) {
-			
+			// 查看该对象是否包含这个方法
 			if(method_exists($obj,$name)) {
 				
 				$ret = $obj->$name($arguments);
